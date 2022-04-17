@@ -14,9 +14,9 @@ for index, tupl in enumerate(there_and_back):
     vout = ffmpeg.filter(
         [
             tf.video,
-            bf.video,
-            tr.video,
             br.video,
+            tr.video,
+            bf.video,
         ],
         "xstack",
         inputs=4,
